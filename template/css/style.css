@@ -1,26 +1,33 @@
 /* styles goes here */
 .card {
     position: relative;
-    /* backface-visibility: hidden; */
 }
 
+.gameCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 0px;
+    align-items: center;}
+
 .back {
-    position: absolute;
-    ;
+    /* position: absolute; */
     width: 150px;
     height: 200px;
     transition: 1s;
-    backface-visibility: hidden
+    backface-visibility: hidden;
+    /* transform: s; */
+    transform-style: preserve-3d;
+    
 }
 
 .front {
     position: absolute;
-    ;
-    width: 150px;
+    width: 145px;
     height: 200px;
     transform: rotateY(180deg);
     transition: 1s;
-    /* backface-visibility: hidden; */
 
 
 
