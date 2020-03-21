@@ -1,0 +1,37 @@
+/* styles goes here */
+.card {
+    position: relative;
+    /* backface-visibility: hidden; */
+}
+
+.back {
+    position: absolute;
+    ;
+    width: 150px;
+    height: 200px;
+    transition: 1s;
+    backface-visibility: hidden
+}
+
+.front {
+    position: absolute;
+    ;
+    width: 150px;
+    height: 200px;
+    transform: rotateY(180deg);
+    transition: 1s;
+    /* backface-visibility: hidden; */
+
+
+
+}
+
+.card:hover .back {
+    transform: rotateY(180deg);
+
+}
+
+.card:hover .front {
+    transform: rotateY(360deg);
+
+}
